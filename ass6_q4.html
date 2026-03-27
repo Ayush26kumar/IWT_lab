@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Assignment-6</title>
+        <script>
+        function updateCounter(val) {
+            const input = document.getElementById("counter-input");
+            let currentVal = parseInt(input.value);
+            let newVal = currentVal + val;
+            if (newVal >= 0) {
+                input.value = newVal;
+            }
+        }
+</script>
+    </head>
+    <body>
+        <input type="number" id="counter-input" value="0" readonly>
+        <button onclick="updateCounter(1)">+</button>
+        <button onclick="updateCounter(-1)">-</button>
+    </body>
+</html>
+

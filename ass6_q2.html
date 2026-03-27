@@ -1,0 +1,22 @@
+<html>
+<head>
+ <script>
+    function toggleVisibility() {
+    const p = document.getElementById("toggle-p");
+    const btn = document.getElementById("toggle-btn");
+    
+    if (p.style.display === "none") {
+      p.style.display = "block";
+      btn.innerText = "Hide";
+    } else {
+      p.style.display = "none";
+      btn.innerText = "Show";
+    }
+  }
+ </script>
+</head>
+<body>
+     <p id="toggle-p">Hello World</p>
+    <button id="toggle-btn" onclick="toggleVisibility()">Hide</button>
+</body>
+</html>
